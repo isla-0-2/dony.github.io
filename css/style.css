@@ -1,0 +1,138 @@
+/*.bg{background: url(../img/bg.png) no-repeat center top; background-size: 1920px; opacity: 0.3; width: 1920px; height: 5000; margin: 0 auto; position: absolute; left: 50%; margin-left: -960px;}*/
+/
+
+
+/* 전체 레이아웃 */
+body,ul,li {margin: 0; padding: 0; font-size: 13px; font-family: '',"맑은 고딕", sans-serif;}
+a {text-decoration: none; color: #ffffff;}
+ul {list-style: none;}
+h1,h2,h3{display: none;}
+button{cursor: pointer; /*font-family: 'GmarketSansMedium';*/}
+
+#wrap{margin: 0 auto; width: 100%; height: auto; /*background-color: #999900;*/}
+
+
+
+/*고정 nav*/
+#header{width: 100%; height: 80px; position: fixed;  z-index: 1000; /*background: #FAC12F;*/}
+#nav_wrap{width: 100%; height: 80px;  font-family: 'Prompt'; font-size: 20px; background: #333333;}
+#nav_wrap #nav{display: flex; justify-content: center; line-height: 80px;}
+#nav_wrap #nav li{float: left; margin: 0 90px;}
+#nav_wrap #nav li a{color: #ffffff;}
+/*고정 nav 끝*/
+
+
+/*#welcome*/
+#welcome{width: 100%; height: 1080px; background-color: #FAC12F; font-family: 'GmarketSansBold';}
+#welcome #welcome_inner{width: 1200px; margin: 0 auto; position: relative; top: 240px; display: flex;; flex-direction: column; font-size: 70px; color: #333333;}
+#welcome #welcome_inner .welcome_text_1{margin-bottom: 120px; }
+#welcome #welcome_inner .welcome_text_1 p{margin-bottom: -80px}
+#welcome #welcome_inner .welcome_text_1 p:nth-child(5){margin-top: -20px;}
+#welcome #welcome_inner .welcome_text_2{font-size: 63px; color: #ffffff; margin-bottom: 112px;}
+#welcome #welcome_inner .welcome_text_2 p:nth-child(1){margin-bottom: -80px;}
+#welcome #welcome_inner .welcome_text_2 p:nth-child(3){font-size: 32px;  line-height: 45px;}
+#welcome #welcome_inner .welcome_text_3{font-size: 32px; display: flex; justify-content: space-between;}
+#welcome #welcome_inner .welcome_text_3 p:nth-child(2){width: 980px; height: 3px; margin-top: 18px; border-bottom: 1px solid #333333;}
+/*#welcome #welcome_inner .welcome_text_1 p:nth-child(1){letter-spacing: 4px;}*/
+
+/*welcome 호버 그래픽*/
+/*
+.spoiler_1 {
+  color: transparent;
+  background-position: right;
+  background-size: 100% 100%;
+  background-image: linear-gradient(#333333, #333333);
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 1000ms ease-in-out;
+}
+.spoiler_1:hover {
+  color: #333333;
+  background-size: 0% 100%;
+}
+
+.spoiler_2 {
+  color: transparent;
+  background-position: right;
+  background-size: 100% 100%;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 1000ms ease-in-out;
+}
+.spoiler_2:hover {
+  color: #ffffff;
+  background-size: 0% 100%;
+}
+*/
+/*welcome_끝*/
+
+
+/*profile*/
+#profile_wrap{width: 100%; height: 1080px; background-color: #ffffff; font-family: 'GmarketSansMedium'; background: #FAC12F;}
+#profile_wrap #profile{width: 100%; margin: 0 auto;}
+#profile_wrap #profile .name{width: 100%; height: 200px; background-color: #ffffff; font-size: 100px; font-family: 'GmarketSansBold'; text-align: center; padding-top: 140px; border-top: 15px solid #333333;}
+#profile_wrap #profile .spec_skills{height: auto; background: #FAC12F; border-top: 15px solid #333333;}
+#profile_wrap #profile .spec_skills .spec_wrap{width: 100%; padding-top: 70px; }
+#profile_wrap #profile .spec_skills .spec_wrap .spec{width: 1200px; margin: 0 auto; text-align: center; display: flex; justify-content: space-between;}
+#profile_wrap #profile .spec_skills .spec_wrap .spec .profile_title{font-family: 'GmarketSansBold'; font-size: 35px; margin-bottom: 20px;}
+#profile_wrap #profile .spec_skills .spec_wrap .spec p{font-size: 20px;}
+/*
+#profile_wrap #profile .spec_skills .skills_wrap{width: 100%; margin: 0 auto;  padding-top: 30px;}
+#profile_wrap #profile .spec_skills .skills_wrap .skills{width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; text-align: center; font-size: 20px; padding-bottom: 50px;}
+#profile_wrap #profile .spec_skills .skills_wrap .skills .skill_gBg{width: 100px; height: 100px; border: 12px solid #333333; border-radius: 120px; margin-bottom: 25px;}
+*/
+
+#profile_wrap #profile .spec_skills .skills_wrap{width: 1200px; margin: 0 auto; margin-top: 50px;}
+#profile_wrap #profile .spec_skills .skills_wrap .skills{display: flex; justify-content: space-between; }
+#profile_wrap #profile .spec_skills .skills_wrap .skills .skill{display: flex; align-items: center; flex-direction: column;}
+#profile_wrap #profile .spec_skills .skills_wrap .skills .skill img{width: 115px;}
+#profile_wrap #profile .spec_skills .skills_wrap .skills .skill p{margin-top: 20px; text-align: center;}
+/*profile_끝*/
+
+
+/*#works*/
+#works_wrap{width: 100%; height: 1080px; font-family: 'GmarketSansMedium';}
+#works_wrap #works{width: 1200px; overflow: hidden; margin: 0 auto; }
+#works_wrap #works .works_title p{width: 100%; height: 130px;  font-size: 70px; font-family: 'GmarketSansBold'; padding-top: 160px; }
+#works_wrap #works .works_title p span{font-family: 'GmarketSansMedium'; font-size: 31px;}
+#works_wrap #works .works_contents_wrap{width: 1200px; height: 550px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; margin-top: 50px; }
+
+
+#works_wrap #works .works_contents .contents_bg{width: 350px; height: 500px;  background-color: #ffffff; box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); transition: box-shadow 1s; transition: 1s ease all;
+}
+#works_wrap #works .works_contents {width: 350px; position: relative; margin: 10px 20px 10px 20px;}
+#works_wrap #works .works_contents .top{width: 350px; position: absolute; top: 65px;}
+#works_wrap #works .works_contents .contents{display: flex; flex-direction: column; align-items: center;}
+#works_wrap #works .works_contents .contents img{width: 240px; margin-bottom: 40px;}
+#works_wrap #works .works_contents .contents_1 p{font-size: 20px; text-align: center;}
+#works_wrap #works .works_contents .contents_1 p span{font-size: 17px;}
+#works_wrap #works .works_contents .contents .button{display: flex;}
+#works_wrap #works .works_contents .contents .button button{width: 125px; height: 55px; background-color: transparent; display: flex; justify-content: space-evenly; align-items: center; margin: 30px 5px 0 5px; border: 1px solid #333333; font-size: 20px; color: #333333; transition: border-color .5s;}
+#works_wrap #works .works_contents .contents .button img{width: 20px; margin: 5px 0;  display: block;}
+
+#works_wrap #works .works_contents:hover > .contents_bg{background-image: linear-gradient(140deg,#FFA858,#FAC12F); /*background: #FAC12F;*/  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.3);}
+#works_wrap #works .works_contents .contents_1 button:hover{border: 1px solid #ffffff; background: #ffffff;}
+
+.next_button{width: 1200px; position: relative; top: -290px; display: flex; justify-content: space-between;}
+/*works_끝*/
+
+
+
+
+/*thanks*/
+#thanks{margin-top: 180px; width: 100%; height: 1080px;}
+#thanks .thankyou{width: 100%; height: 540px; background: #FAC12F; border-bottom: 15px solid #333333;}
+#thanks .thankyou div{width: 1200px; height: 540px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-start;}
+#thanks .thankyou div p{font-family: 'GmarketSansBold'; font-size: 70px; line-height: 70px; margin-top: 150px;}
+#thanks .parkdowon{width: 100%; height: 540px; background: #ffffff;}
+#thanks .parkdowon div{width: 1200px; height: 540px; margin: 0 auto; display: flex; align-items: center; justify-content: flex-start;}
+#thanks .parkdowon div p{font-family: 'GmarketSansBold'; font-size: 70px; line-height: 70px; margin: 90px 0 150px 0;}
+.copy{width: 1200px; margin: 0 auto; text-align: center;}
+
+/*thanks_끝*/
+
+
+
+
+
